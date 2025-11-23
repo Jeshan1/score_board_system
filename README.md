@@ -4,6 +4,8 @@ The **Score Board System** is a real-time sports match management platform built
 
 ---
 
+### Due to my current company workload some refinement and optimization need to be correct in this system. I had code in fast pace for all funcionality so if any one module have error for that I am sorry. In first phase, I want to add my core knowledge so I have implemented just like behavioral pattern for few operations on admin side.
+
 ## 🚀 Features
 
 - Team & Player Management  
