@@ -11,7 +11,13 @@ use App\Http\Controllers\api\PublicGameController;
 use App\Http\Controllers\EventController;
 
 
+// I had tested the apis for admin so you can configure for all roles [admin, team_manager, player]
 
+//admin have all access
+//team manager have access to update team and player
+//referee have access to update event
+
+// in some cases I had missed to protect route 
 Route::post('/user/create', [AuthController::class, 'register']);
 Route::post('/user/login', [AuthController::class, 'login']);
 Route::get('/get-roles', [AuthController::class, 'getRoles']);
