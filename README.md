@@ -3,6 +3,8 @@
 
 The **Score Board System** is a real-time sports match management platform built with **Laravel** and **Vue.js**. It enables administrators and referees to manage teams, players, matches, and live in-game events such as goals, fouls, and cards with instant updates through websockets.
 
+## AT last in testing phase, player update not smooth I will fix it. I had cover the all requirements.
+
 ---
 
 ### Due to my current company workload some refinement and optimization need to be correct in this system. I had code in fast pace for all funcionality so if any one module have error for that I am sorry. I want to add my core knowledge so I have implemented just like behavioral pattern for few operations on admin side in the project development starting time, .
