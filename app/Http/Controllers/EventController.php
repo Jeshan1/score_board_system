@@ -131,13 +131,12 @@ class EventController extends Controller
                 }
 
                 if ($event->player_id && $event->player) {
-                    // Safely increment only if column exists
                     $player = $event->player;
 
                     // Always increment fouls
                     $player->increment('fouls');
 
-                    // Only increment cards if column exists (safe)
+                    // Only increment cards 
                     if (Schema::hasColumn('players', 'yellow_cards') && $event->foul_type === 'yellow') {
                         $player->increment('yellow_cards');
                     }
@@ -164,7 +163,6 @@ class EventController extends Controller
             'teamAFouls' => $game->team_a_fouls ?? 0,
             'teamBFouls' => $game->team_b_fouls ?? 0,
             'newEvent' => $event->load('player.team')->only([
-                'id', 'type', 'foul_type', 'minute', 'player', 'team_id'
             ])
             ]
         ];

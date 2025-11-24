@@ -67,7 +67,7 @@ class GameController extends Controller
         ]);
     }
 
-    public function updateEvent(Request $request, $gameId)
+    public function updateEvent(Request $request, $gameId)   //unused
     {
         $game = Game::findOrFail($gameId);
 
@@ -136,11 +136,6 @@ class GameController extends Controller
                 'status'=>$game->status,
                 'teamAScore' => $game->team_a_score,
                 'teamBScore' => $game->team_b_score,
-            // 'teamAFouls' => $game->team_a_fouls ?? 0,
-            // 'teamBFouls' => $game->team_b_fouls ?? 0,
-            // 'newEvent' => $event->load('player.team')->only([
-            //     'id', 'type', 'foul_type', 'minute', 'player', 'team_id'
-            // ])
             ]
         ];
 

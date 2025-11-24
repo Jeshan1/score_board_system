@@ -40,8 +40,8 @@ class PublicGameController extends Controller
         $game = Game::with([
             'teamA',
             'teamB',
-            'teamAPlayers',     // ← Works! No game_id error
-            'teamBPlayers',     // ← Works!
+            'teamAPlayers',    
+            'teamBPlayers',     
             'events.player',
             'events.victimPlayer',
             'league',
