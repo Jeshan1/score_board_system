@@ -1,6 +1,6 @@
 <template>
     <section class="max-w-7xl mx-auto p-6">
-      <h3 class="text-2xl font-semibold mb-4">Upcoming Matches</h3>
+      <h3 class="text-2xl font-semibold mb-4">Matches</h3>
   
       <div class="overflow-x-auto">
         <table class="min-w-full bg-white border border-gray-200 rounded-lg">

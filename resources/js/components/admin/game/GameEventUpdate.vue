@@ -264,36 +264,36 @@
   
   <style scoped>
   .scrollable-container {
-    max-height: 100vh; /* Full viewport height */
-    overflow-y: auto; /* Scroll vertically */
+    max-height: 100vh; 
+    overflow-y: auto;
     padding: 1.5rem;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    -webkit-overflow-scrolling: touch; 
   }
   
-  /* Ensure table stays responsive */
+ 
   table {
     min-width: 100%;
   }
   
-  /* Fix for sticky headers or form if needed */
+  
   .bg-gradient-to-r,
   .bg-white {
     width: 100%;
   }
   
-  /* Smooth focus styles */
+  
   input:focus,
   select:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
   }
   
-  /* Hide scrollbars but keep scrolling */
+  
   .scrollable-container::-webkit-scrollbar {
     display: none;
   }
   .scrollable-container {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
   }
   </style>

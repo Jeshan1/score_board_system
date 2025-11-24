@@ -170,6 +170,6 @@
   </script>
   
   <style scoped>
-  /* You can add any custom styles here if needed */
+  
   </style>
   
