@@ -23,9 +23,7 @@ class Game extends Model
         'team_b_fouls',
     ];
 
-    // protected $with = ['teamA', 'teamB'];
     
-    // protected $appends = ['team_a_players', 'team_b_players'];
     public function league()
     {
         return $this->belongsTo(League::class);
@@ -70,26 +68,5 @@ class Game extends Model
         return $this->hasMany(Player::class, 'team_id', 'team_b_id');
     }
 
-   // This appends team_a_players array in API response
-//    public function getTeamAPlayersAttribute()
-//    {
-//        return $this->teamAPlayers()->get();
-//    }
-
-//    public function getTeamBPlayersAttribute()
-//    {
-//        return $this->teamBPlayers()->get();
-//    }
-
-//    // Optional: also append team objects (if not using $with)
-//    public function getTeamAAttribute()
-//    {
-//        return $this->teamA;
-//    }
-
-//    public function getTeamBAttribute()
-//    {
-//        return $this->teamB;
-//    }
     
 }
