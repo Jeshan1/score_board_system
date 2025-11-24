@@ -1,6 +1,5 @@
 # 🏆 Score Board System
 
-Mistakely yesterday night match table Index and Modal deleted.
 
 The **Score Board System** is a real-time sports match management platform built with **Laravel** and **Vue.js**. It enables administrators and referees to manage teams, players, matches, and live in-game events such as goals, fouls, and cards with instant updates through websockets.
 
