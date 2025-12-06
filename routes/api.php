@@ -9,6 +9,7 @@ use App\Http\Controllers\api\TeamController;
 use App\Http\Controllers\api\GameController;
 use App\Http\Controllers\api\PublicGameController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\api\DashboardController;
 
 
 // I had tested the apis for admin so you can configure for all roles [admin, team_manager, player]
@@ -47,8 +48,11 @@ Route::middleware(['auth:api', 'role:admin'])->group(function () {
     Route::delete('/games/{game}', [GameController::class, 'destroy']);
 
     
-    
+    //fetched all match statistics in dashboard
+    Route::get('/fetch-all-team-statistics',[DashboardController::class,'getTeamsStatistics']);
 
+    Route::get('/get-total-entity', [DashboardController::class, 'getTotalEntity']);
+    Route::get('/get-matches', [DashboardController::class, 'fetchMatches']);
 });
 
 Route::get('/games', [GameController::class, 'index'])->middleware(['auth:api', 'role:admin,referee']);
