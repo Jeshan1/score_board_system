@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-[#f7f7f8] h-screen fixed top-0 left-0 min-w-[250px] py-6 px-4 font-sans">
     <div class="mb-8">
-      <h1 class="text-2xl font-bold text-gray-800">Yenya Admin Panel</h1>
+      <h1 class="text-2xl font-bold text-gray-800">Admin Panel</h1>
     </div>
 
     <div class="overflow-auto py-6 h-full">
