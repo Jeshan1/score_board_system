@@ -42,8 +42,6 @@ The **Score Board System** is a real-time sports match management platform built
 git clone https://github.com/jeshan1/score_board_system.git
 cd score_board_system
 
-##Image
-![Description](https://github.com/jeshan1/score_board_system/raw/main/images/image.png)
 
 
 
