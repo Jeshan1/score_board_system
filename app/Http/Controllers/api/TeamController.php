@@ -87,16 +87,15 @@ class TeamController extends Controller
 
             // Update players
             if (!empty($validated['players']) && is_array($validated['players'])) {
-                // Player::where('team_id', $team->id)
-                //     ->whereNotIn('id', $validated['players'])
-                //     ->update(['team_id' => null]);
+                $playerIds = collect($validated['players'])->pluck('id')->toArray();
 
-                Player::whereIn('id', $validated['players'])
+                Player::whereIn('id', $playerIds)
                     ->update(['team_id' => $team->id]);
 
-                // Player::where('team_id', $team->id)
-                //     ->whereNotIn('id', $validated['players'])
-                //     ->update(['team_id' => null]);
+                // Remove players that were deselected
+                Player::where('team_id', $team->id)
+                        ->whereNotIn('id', $playerIds)
+                        ->update(['team_id' => null]);
             }
         });
 
