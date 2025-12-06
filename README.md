@@ -1,7 +1,11 @@
 # 🏆 Score Board System
 
+## Implemented Eloquent almost.
+
 
 The **Score Board System** is a real-time sports match management platform built with **Laravel** and **Vue.js**. It enables administrators and referees to manage teams, players, matches, and live in-game events such as goals, fouls, and cards with instant updates through websockets.
+
+## AT last in testing phase, player update not smooth I will fix it. I had cover the all requirements.
 
 ---
 
@@ -38,5 +42,5 @@ The **Score Board System** is a real-time sports match management platform built
 
 ### 1. Clone Repository
 ```sh
-git clone https://github.com/your-username/score_board_system.git
+git clone https://github.com/jeshan1/score_board_system.git
 cd score_board_system
