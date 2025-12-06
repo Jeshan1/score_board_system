@@ -75,7 +75,7 @@
                     <div class="text-3xl font-bold text-blue-600">{{ stat.team_a_goals }}</div>
                     <div class="text-gray-600">Goals</div>
                 </div>
-                <div class="text-2xl font-semibold">VS</div>
+                <div class="text-2xl font-semibold"></div>
                 <div>
                     <div class="text-3xl font-bold text-red-600">{{ stat.team_b_goals }}</div>
                     <div class="text-gray-600">Goals</div>
