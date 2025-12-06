@@ -190,5 +190,3 @@ const submitForm = () => {
   emit("submit", { ...form.value, isEdit: isEdit.value });
 };
 </script>
-
-</style>
